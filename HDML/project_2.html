@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cricket Chronicles | Records & Legends</title>
+    <link rel="stylesheet" href="project_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Banner -->
+    <header class="header">
+        <div class="stadium-lights"></div>
+        <div class="container header-content">
+            <div class="badge">BCCI Legacy Showcase</div>
+            <h1>INDIAN CRICKET <span>CHRONICLES</span></h1>
+            <p>Exploring Iconic Legends, Unbreakable Records & The Next-Gen Stars of Team India</p>
+            
+            <div class="stats-counter-strip">
+                <div class="stat-box">
+                    <span class="num">3</span>
+                    <span class="lbl">World Cups (1983, 2011, 2024)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="num">100</span>
+                    <span class="lbl">Int'l Centuries (Sachin)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="num">650+</span>
+                    <span class="lbl">Most Int'l Sixes (Rohit)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="num">30-Ball</span>
+                    <span class="lbl">Fastest T20I 100 (Abhishek)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Category Filters (Pure CSS Radio Buttons) -->
+        <div class="filter-wrapper">
+            <input type="radio" id="filter-all" name="cricket-filter" checked>
+            <input type="radio" id="filter-legend" name="cricket-filter">
+            <input type="radio" id="filter-modern" name="cricket-filter">
+            <input type="radio" id="filter-future" name="cricket-filter">
+
+            <div class="filter-buttons">
+                <label for="filter-all" class="filter-btn">All Players (11)</label>
+                <label for="filter-legend" class="filter-btn">🏆 Icons & Legends</label>
+                <label for="filter-modern" class="filter-btn">⚡ Modern Titans</label>
+                <label for="filter-future" class="filter-btn">🔥 Rising Stars</label>
+            </div>
+
+            <!-- Player Grid -->
+            <div class="player-grid">
+
+                <!-- Player 1: Sachin Tendulkar -->
+                <div class="player-card cat-legend">
+                    <div class="card-badge">Legend</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">10</div>
+                        <div class="avatar-icon">🏏</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Sachin Tendulkar</h2>
+                        <span class="role">Master Blaster • Right-Hand Batter</span>
+                        <p class="tagline">The God of Cricket with 100 international centuries.</p>
+                        <div class="mini-stats">
+                            <div><strong>34,357</strong><span>Total Runs</span></div>
+                            <div><strong>100</strong><span>Centuries</span></div>
+                            <div><strong>2011</strong><span>World Champion</span></div>
+                        </div>
+                        <a href="#sachin-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 2: Kapil Dev -->
+                <div class="player-card cat-legend">
+                    <div class="card-badge">1983 Hero</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">83</div>
+                        <div class="avatar-icon">🏆</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Kapil Dev</h2>
+                        <span class="role">Haryana Hurricane • All-Rounder</span>
+                        <p class="tagline">Led underdog India to their historic first World Cup win in 1983.</p>
+                        <div class="mini-stats">
+                            <div><strong>434</strong><span>Test Wickets</span></div>
+                            <div><strong>5,248</strong><span>Test Runs</span></div>
+                            <div><strong>175*</strong><span>Epic WC Score</span></div>
+                        </div>
+                        <a href="#kapil-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 3: MS Dhoni -->
+                <div class="player-card cat-legend">
+                    <div class="card-badge">Legendary Captain</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">7</div>
+                        <div class="avatar-icon">🧤</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>MS Dhoni</h2>
+                        <span class="role">Captain Cool • Wicketkeeper-Batter</span>
+                        <p class="tagline">Only captain in history to win all 3 ICC White-Ball Trophies.</p>
+                        <div class="mini-stats">
+                            <div><strong>17,266</strong><span>Total Runs</span></div>
+                            <div><strong>829</strong><span>Dismissals</span></div>
+                            <div><strong>3</strong><span>ICC Trophies</span></div>
+                        </div>
+                        <a href="#dhoni-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 4: Virat Kohli -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">Modern Great</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">18</div>
+                        <div class="avatar-icon">👑</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Virat Kohli</h2>
+                        <span class="role">The Run Machine • Top-Order Batter</span>
+                        <p class="tagline">Over 27,500 international runs and 86 international centuries.</p>
+                        <div class="mini-stats">
+                            <div><strong>27,500+</strong><span>Total Runs</span></div>
+                            <div><strong>86</strong><span>Centuries</span></div>
+                            <div><strong>55</strong><span>ODI 100s</span></div>
+                        </div>
+                        <a href="#virat-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 5: Rohit Sharma -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">Hitman</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">45</div>
+                        <div class="avatar-icon">💥</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Rohit Sharma</h2>
+                        <span class="role">World Cup Winning Captain • Opener</span>
+                        <p class="tagline">First batter in cricket history to smash over 650 international sixes.</p>
+                        <div class="mini-stats">
+                            <div><strong>20,074</strong><span>Int'l Runs</span></div>
+                            <div><strong>650+</strong><span>Int'l Sixes</span></div>
+                            <div><strong>264</strong><span>Highest ODI</span></div>
+                        </div>
+                        <a href="#rohit-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 6: Jasprit Bumrah -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">Bowling Maestro</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">93</div>
+                        <div class="avatar-icon">⚡</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Jasprit Bumrah</h2>
+                        <span class="role">Boom Boom • Right-Arm Fast Bowler</span>
+                        <p class="tagline">World's premier all-format fast bowler with over 500 int'l wickets.</p>
+                        <div class="mini-stats">
+                            <div><strong>500+</strong><span>Int'l Wickets</span></div>
+                            <div><strong>234</strong><span>Test Wkts</span></div>
+                            <div><strong>19.7</strong><span>Test Avg</span></div>
+                        </div>
+                        <a href="#bumrah-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 7: Ravindra Jadeja -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">Sir Jadeja</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">8</div>
+                        <div class="avatar-icon">🗡️</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Ravindra Jadeja</h2>
+                        <span class="role">3D All-Rounder • Left-Arm Spinner</span>
+                        <p class="tagline">Achieved the elite Test double of 4,000+ runs and 350+ wickets.</p>
+                        <div class="mini-stats">
+                            <div><strong>4,100+</strong><span>Test Runs</span></div>
+                            <div><strong>350+</strong><span>Test Wkts</span></div>
+                            <div><strong>#1</strong><span>Test All-Rounder</span></div>
+                        </div>
+                        <a href="#jadeja-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 8: Suryakumar Yadav -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">SKY 360°</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">63</div>
+                        <div class="avatar-icon">🌌</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Suryakumar Yadav</h2>
+                        <span class="role">T20I Captain • 360-Degree Batter</span>
+                        <p class="tagline">Dominates T20 cricket with audacious scoops, ramps, and high strike rates.</p>
+                        <div class="mini-stats">
+                            <div><strong>4</strong><span>T20I Centuries</span></div>
+                            <div><strong>165+</strong><span>Strike Rate</span></div>
+                            <div><strong>#1</strong><span>T20 Batter</span></div>
+                        </div>
+                        <a href="#sky-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 9: Hardik Pandya -->
+                <div class="player-card cat-modern">
+                    <div class="card-badge">Kung Fu Pandya</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">33</div>
+                        <div class="avatar-icon">🔥</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Hardik Pandya</h2>
+                        <span class="role">Pace All-Rounder • Finisher</span>
+                        <p class="tagline">Clutch player who delivers under high-pressure World Cup final overs.</p>
+                        <div class="mini-stats">
+                            <div><strong>3,500+</strong><span>Int'l Runs</span></div>
+                            <div><strong>180+</strong><span>Int'l Wickets</span></div>
+                            <div><strong>2024</strong><span>Final Over Hero</span></div>
+                        </div>
+                        <a href="#hardik-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 10: Yashasvi Jaiswal -->
+                <div class="player-card cat-future">
+                    <div class="card-badge">Rising Superstar</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">64</div>
+                        <div class="avatar-icon">🌟</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Yashasvi Jaiswal</h2>
+                        <span class="role">The Prodigy • Left-Hand Opener</span>
+                        <p class="tagline">Fastest test player to hit 1,000 runs for India with dual double tons.</p>
+                        <div class="mini-stats">
+                            <div><strong>214*</strong><span>High Score</span></div>
+                            <div><strong>2</strong><span>Test 200s</span></div>
+                            <div><strong>55+</strong><span>Test Average</span></div>
+                        </div>
+                        <a href="#yashasvi-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Player 11: Abhishek Sharma -->
+                <div class="player-card cat-future">
+                    <div class="card-badge">Record Breaker</div>
+                    <div class="avatar-box">
+                        <div class="jersey-num">4</div>
+                        <div class="avatar-icon">🚀</div>
+                    </div>
+                    <div class="player-info">
+                        <h2>Abhishek Sharma</h2>
+                        <span class="role">Explosive Opener • Left-Arm Spin</span>
+                        <p class="tagline">Smashed India's fastest T20I century off just 30 balls vs Afghanistan!</p>
+                        <div class="mini-stats">
+                            <div><strong>30-Ball</strong><span>Fastest 100</span></div>
+                            <div><strong>108</strong><span>High Score</span></div>
+                            <div><strong>317.6</strong><span>Strike Rate</span></div>
+                        </div>
+                        <a href="#abhishek-modal" class="btn-details">View Full Records &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Major Trophy Records Section -->
+        <section class="trophy-section">
+            <h2>🏆 Team India's Cabinet of Glory</h2>
+            <p>Milestone ICC Trophies that defined generations of Indian Cricket</p>
+            
+            <div class="trophy-grid">
+                <div class="trophy-card">
+                    <div class="year">1983</div>
+                    <h3>Prudential World Cup</h3>
+                    <p>Kapil Dev's underdog India shocked West Indies at Lord's to start a revolution.</p>
+                </div>
+                <div class="trophy-card">
+                    <div class="year">2007</div>
+                    <h3>ICC T20 World Cup</h3>
+                    <p>MS Dhoni's young brigade defeated Pakistan in Johannesburg in the inaugural edition.</p>
+                </div>
+                <div class="trophy-card">
+                    <div class="year">2011</div>
+                    <h3>ICC ODI World Cup</h3>
+                    <p>Ended a 28-year wait on home soil at Wankhede Stadium with Dhoni's iconic six.</p>
+                </div>
+                <div class="trophy-card">
+                    <div class="year">2024</div>
+                    <h3>ICC T20 World Cup</h3>
+                    <p>Rohit Sharma led an unbeaten campaign in Barbados, ending India's ICC trophy drought.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PURE CSS MODAL DIALOGS -->
+
+    <!-- Modal: Sachin -->
+    <div id="sachin-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Sachin Ramesh Tendulkar</h2>
+                <span class="sub">The Master Blaster (1989 - 2013)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Unbreakable Records:</h3>
+                <ul class="records-list">
+                    <li>Most international runs in history: <strong>34,357 Runs</strong></li>
+                    <li>Only cricketer with <strong>100 International Centuries</strong> (51 Test + 49 ODI)</li>
+                    <li>First player to score a double century in ODI cricket (200* vs SA in 2010)</li>
+                    <li>Most matches played in Cricket History: 200 Tests & 463 ODIs</li>
+                </ul>
+                <div class="quote-box">"I have seen God, he bats at no. 4 for India." – Matthew Hayden</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Kapil Dev -->
+    <div id="kapil-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Kapil Dev Nikhanj</h2>
+                <span class="sub">Haryana Hurricane (1978 - 1994)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Unbreakable Records:</h3>
+                <ul class="records-list">
+                    <li>Only player in cricket history to combine <strong>4,000+ Test runs and 400+ Test wickets</strong>.</li>
+                    <li>Youngest captain to win an ODI World Cup (Age 24 in 1983).</li>
+                    <li>Legendary 175* against Zimbabwe after India was down 17/5 in 1983 World Cup.</li>
+                </ul>
+                <div class="quote-box">"When you have to make a choice and don't make it, that is in itself a choice."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Dhoni -->
+    <div id="dhoni-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Mahendra Singh Dhoni</h2>
+                <span class="sub">Captain Cool (2004 - 2019)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Unbreakable Records:</h3>
+                <ul class="records-list">
+                    <li>Only captain to win <strong>T20 World Cup (2007)</strong>, <strong>ODI World Cup (2011)</strong>, and <strong>Champions Trophy (2013)</strong>.</li>
+                    <li>Fastest stumping record in international cricket: <strong>0.08 seconds</strong>.</li>
+                    <li>Most matches as captain in international cricket: <strong>332 matches</strong>.</li>
+                </ul>
+                <div class="quote-box">"Dhoni finishes off in style. India lift the World Cup after 28 years!" – Ravi Shastri</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Virat -->
+    <div id="virat-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Virat Kohli</h2>
+                <span class="sub">The King (2008 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Updated Career Records:</h3>
+                <ul class="records-list">
+                    <li><strong>86 International Centuries</strong> (55 ODI + 29 Test + 1 T20I + 1 Latest).</li>
+                    <li>Crossed <strong>15,000 ODI runs</strong> and <strong>27,500+ total international runs</strong>.</li>
+                    <li>Most runs in a single ODI World Cup edition: <strong>765 runs (2023 World Cup)</strong>.</li>
+                </ul>
+                <div class="quote-box">"As long as Virat Kohli is at the crease, no chase is impossible."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Rohit -->
+    <div id="rohit-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Rohit Gurunath Sharma</h2>
+                <span class="sub">The Hitman (2007 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Updated Career Records:</h3>
+                <ul class="records-list">
+                    <li>First player in international cricket to reach <strong>650+ Sixes</strong>.</li>
+                    <li>Highest individual score in ODI history: <strong>264 runs vs Sri Lanka</strong>.</li>
+                    <li>Crossed <strong>20,000 International Runs</strong> with 50 international centuries.</li>
+                </ul>
+                <div class="quote-box">"When Rohit Sharma gets going, time seems to stop."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Bumrah -->
+    <div id="bumrah-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Jasprit Jasbirsingh Bumrah</h2>
+                <span class="sub">The Yorker King (2016 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Updated Career Records:</h3>
+                <ul class="records-list">
+                    <li>Crossed <strong>500+ International Wickets</strong> across Test, ODI, and T20Is.</li>
+                    <li>234 Test wickets with an astonishing bowling average of 19.7.</li>
+                    <li>Player of the Tournament in 2024 T20 World Cup.</li>
+                </ul>
+                <div class="quote-box">"Jasprit Bumrah is a once-in-a-generation bowler."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Jadeja -->
+    <div id="jadeja-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Ravindrasinh Anirudhsinh Jadeja</h2>
+                <span class="sub">Sir Jadeja (2009 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Updated Career Records:</h3>
+                <ul class="records-list">
+                    <li>Became only the 4th cricketer in history to achieve <strong>4,000+ Test Runs & 350+ Test Wickets</strong>.</li>
+                    <li>Consistently ranked ICC #1 Test All-Rounder in world cricket.</li>
+                    <li>Scored 37 runs in a single IPL over (joint-most in league history).</li>
+                </ul>
+                <div class="quote-box">"Do not run on Ravindra Jadeja's arm, ever."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: SKY -->
+    <div id="sky-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Suryakumar Ashok Yadav</h2>
+                <span class="sub">SKY / Mr. 360 (2021 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Career Records:</h3>
+                <ul class="records-list">
+                    <li>Fastest to reach 1,500 T20I runs in terms of balls faced (1,029 balls).</li>
+                    <li>4 T20I centuries scored from positions lower than opening batter.</li>
+                    <li>Took the iconic boundary catch of David Miller in the 2024 T20 World Cup Final.</li>
+                </ul>
+                <div class="quote-box">"Sky has no limit, and neither does Suryakumar Yadav."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Hardik -->
+    <div id="hardik-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Hardik Himanshu Pandya</h2>
+                <span class="sub">Kung Fu Pandya (2016 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Career Records:</h3>
+                <ul class="records-list">
+                    <li>Defended 16 runs in the final over of the 2024 T20 World Cup Final against South Africa.</li>
+                    <li>First Indian player to hit 50 runs and take 4 wickets in a single T20I match.</li>
+                </ul>
+                <div class="quote-box">"I like taking responsibility when the situation is tough."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Yashasvi -->
+    <div id="yashasvi-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Yashasvi Jaiswal</h2>
+                <span class="sub">Next-Gen Wonder (2023 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Career Records:</h3>
+                <ul class="records-list">
+                    <li>Scored back-to-back double centuries in a Test series against England.</li>
+                    <li>Fastest 50 in IPL history off just 13 balls.</li>
+                    <li>Equalized the world record for most sixes in a Test innings (12 Sixes).</li>
+                </ul>
+                <div class="quote-box">"From selling pani-puri to dominating Test cricket, Yashasvi is pure inspiration."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Abhishek Sharma -->
+    <div id="abhishek-modal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <div class="modal-header">
+                <h2>Abhishek Sharma</h2>
+                <span class="sub">Fearless Power-Hitter (2024 - Present)</span>
+            </div>
+            <div class="modal-body">
+                <h3>Record-Breaking Milestone:</h3>
+                <ul class="records-list">
+                    <li>Smashed the <strong>fastest T20I century by an Indian (30 balls)</strong> vs Afghanistan, breaking Rohit Sharma's 35-ball record.</li>
+                    <li>Fastest T20I hundred by any batter representing an <strong>ICC Full Member nation</strong>.</li>
+                    <li>Scored 108 off 34 balls with 9 fours and 11 sixes at a strike rate of 317.65.</li>
+                    <li>Highest individual score in the powerplay in men's T20Is (76* off 22 balls).</li>
+                </ul>
+                <div class="quote-box">"I just hit the ball if it is in my zone, simple as that."</div>
+            </div>
+        </div>
+    </div>
